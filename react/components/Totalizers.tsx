@@ -1,14 +1,15 @@
 import React from 'react'
 
-const Totalizers = () => {
+const Totalizers = (totalizers: any) => {
+  const { id, name, value } = totalizers.total
+
+  console.log(id, name, value)
+
   return (
     <>
       <div>
-        <a href="/">CHECK OUT</a>
-      </div>
-      <div>
-        <button>CONTINÚA COMPRANDO</button>
-        <a href="/">VER CARRITO</a>
+        <p>Tenemos x items en tu compra</p>
+        <p>Total: x</p>
       </div>
     </>
   )
